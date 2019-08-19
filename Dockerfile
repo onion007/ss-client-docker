@@ -1,10 +1,13 @@
-FROM debian:stretch
+FROM shadowsocks/shadowsocks-libev
 MAINTAINER onion007@gmail.com
 
-RUN sed -i 's/deb.debian.org/mirrors.163.com/g' /etc/apt/sources.list && \
-    sed -i 's/security.debian.org/mirrors.163.com/g' /etc/apt/sources.list
+USER root
 
-RUN apt update && apt -qy install shadowsocks-libev privoxy
+# china repository
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+
+RUN apk update && apk upgrade && apk add privoxy
+
 ADD ROOT/* /
 ADD ROOT/etc/privoxy/* /etc/privoxy/
 
