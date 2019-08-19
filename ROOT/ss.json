@@ -5,8 +5,6 @@
     "local_port":1080,
     "timeout":180,
     "mode":"tcp_only",
-    "fast_open":true,
-    "acl":"/proxy.list",
     "password":"PASSWORD",
     "method":"METHOD"
 }

@@ -34,4 +34,5 @@ else
    sed -i "s/METHOD/${METHOD}/" /ss.json
 fi
 
+/usr/sbin/privoxy /etc/privoxy/config
 ss-local -c /ss.json --acl /proxy.list -v
