@@ -1,0 +1,12 @@
+{
+    "server":"SERVER_IP",
+    "server_port":SERVER_PORT,
+    "local_address":"0.0.0.0",
+    "local_port":1080,
+    "timeout":180,
+    "mode":"tcp_only",
+    "fast_open":true,
+    "acl":"/proxy.list",
+    "password":"PASSWORD",
+    "method":"METHOD"
+}
