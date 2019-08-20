@@ -4,4 +4,5 @@
 docker build -t "xxxx" .
 
 ## Use
-docker run -p 1080 -p 8080 -e SERVER_IP=xxx -e SERVER_PORT=xxx -e PASSWORD=xxx -e METHOD=xxx
+必须提供/tmp/ss目录，包含config.json配置和proxy.list黑名单
+docker-compose up -d

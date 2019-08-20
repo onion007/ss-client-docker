@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  ss-client:
+    image: ss-client
+    container_name: ss-client
+    restart: always
+    ports:
+      - 1080:1080/tcp
+      - 1080:1080/udp
+      - 8080:8080/tcp
+      - 8080:8080/udp
+    volumes:
+      - /tmp/ss:/ssconfig

@@ -13,5 +13,9 @@ ADD ROOT/etc/privoxy/* /etc/privoxy/
 
 EXPOSE 1080 8080
 
+WORKDIR /ssconfig
+
+USER privoxy
+
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/startup.sh"]
