@@ -4,7 +4,7 @@
     "local_address":"0.0.0.0",
     "local_port":1080,
     "timeout":180,
-    "mode":"tcp_only",
+    "mode":"tcp_and_udp",
     "password":"PASSWORD",
     "method":"METHOD"
 }
